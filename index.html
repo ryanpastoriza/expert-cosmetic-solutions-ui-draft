@@ -363,12 +363,12 @@
 </style>
 <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="home-page">
 <!-- HEADER / NAV -->
 <header id="header">
   <div>
-    <a href="#top" style="display:flex;align-items:center;flex-shrink:0;">
-      <img data-ecs-asset="logoMark" alt="Expert Cosmetic Solutions" width="44" height="44">
+    <a href="#top" class="site-logo-link">
+      <img class="brand-logo" src="assets/Expert-Cosmetic-Solutions-Logo-Transparent.png" data-ecs-asset="logoBrand" alt="Expert Cosmetic Solutions" width="132" height="132">
     </a>
     <nav id="desktopNav">
       <a href="#top">Home</a>
@@ -445,7 +445,7 @@
       <div class="trust-badge-subtext">Products Only</div>
     </div>
   </div>
-  <img class="hero-img" src="51d4694a-f44a-4c4f-b854-344942f322b7" alt="Expert Cosmetic Solutions Hero" style="background-color: #003a59; object-fit: cover">
+  <img class="hero-img" src="assets/photos/hero-home.jpg" data-ecs-asset="heroHome" alt="Professional laser skin treatment at Expert Cosmetic Solutions" width="1400" height="840" loading="eager" decoding="async">
 </div>
 </section>
 
@@ -463,7 +463,7 @@
         <p>With over a decade of experience, our team combines medical expertise with a personalised approach - so every treatment is tailored, not templated. <em>No two faces. No two plans. No shortcuts.</em></p>
         <a href="https://expertcosmeticsolutions.com.au/about-us/" target="_blank">Read More About Us -></a>
       </div>
-      <img class="about-image" data-ecs-asset="aboutTeam" alt="Expert Cosmetic Solutions clinical team" width="600" height="800" loading="lazy" decoding="async" data-comment-anchor="a7a28c18bf-img">
+      <img class="about-image" src="assets/about-use-image.jpg" data-ecs-asset="aboutTeam" alt="Expert Cosmetic Solutions clinical team" width="600" height="800" loading="lazy" decoding="async" data-comment-anchor="a7a28c18bf-img">
     </div>
     <div class="tiles-grid">
       <div class="tile">
@@ -489,7 +489,7 @@
 <section id="whyecs" data-screen-label="Why ECS">
   <div style="max-width:1200px;margin:0 auto;padding:0 40px;">
     <div class="why-header">
-      <div class="section-label" style="justify-content:center;">Why Choose Us</div>
+      <div class="section-label">Why Choose Us</div>
       <h2>Why Expert Cosmetic Solutions?</h2>
       <p class="section-subtitle">Choosing a cosmetic clinic isn't just about treatments - it's about who you trust with your face, your skin, and your confidence.</p>
     </div>
@@ -519,12 +519,10 @@
         <h3>Led By Experience You Can Trust</h3>
         <p>Founded by Aubrey Arney, cosmetic nurse with thousands of treatments performed. A reputation built on results, honesty and genuine care.</p>
       </div>
-      <div class="cta-card">
-        <div>
-          <div class="cta-card-title">Ready to feel like you?</div>
-          <p>Your journey starts with a personalised consultation. No pressure. Just honest guidance.</p>
-        </div>
-        <a href="https://bookings.gettimely.com/expertcosmeticsolutions1/book" target="_blank" class="btn btn-secondary">Book Now -></a>
+      <div class="feature-card">
+        <div class="feature-icon">&#9679;</div>
+        <h3>Two Clinics, One Standard of Care</h3>
+        <p>Appointments in Pakenham and Warragul with the same experienced nurses, medical standards and personalised approach - choose the location that suits you.</p>
       </div>
     </div>
   </div>
@@ -534,13 +532,13 @@
 <section id="services" data-screen-label="Services">
   <div style="max-width:1200px;margin:0 auto;padding:0 40px;">
     <div class="services-header reveal">
-      <div class="section-label" style="justify-content:center;">What We Offer</div>
+      <div class="section-label">What We Offer</div>
       <h2>Treatments Designed Around You</h2>
       <p class="section-subtitle">Every treatment starts with a conversation, not a script.</p>
     </div>
     <div class="services-grid">
       <div class="service-card reveal" style="--reveal-delay: 0ms">
-        <img data-ecs-asset="serviceLaserHairRemoval" alt="Laser Hair Removal" width="640" height="190" loading="lazy" decoding="async">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&h=380&q=80" data-ecs-asset="serviceLaserHairRemoval" alt="Laser hair removal treatment" width="800" height="380" loading="lazy" decoding="async">
         <div class="service-card-body">
           <h3>Laser Hair Removal</h3>
           <p>Permanent reduction with Candela laser technology, safe for all skin tones.</p>
@@ -548,7 +546,7 @@
         </div>
       </div>
       <div class="service-card reveal" style="--reveal-delay: 40ms">
-        <img data-ecs-asset="serviceCosmeticInjectables" alt="Cosmetic Injectables" width="640" height="190" loading="lazy" decoding="async">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&h=380&q=80" data-ecs-asset="serviceCosmeticInjectables" alt="Cosmetic injectables consultation" width="800" height="380" loading="lazy" decoding="async">
         <div class="service-card-body">
           <h3>Cosmetic Injectables</h3>
           <p>Anti-wrinkle and dermal filler treatments for soft, natural-looking results.</p>
@@ -556,7 +554,7 @@
         </div>
       </div>
       <div class="service-card reveal" style="--reveal-delay: 80ms">
-        <img data-ecs-asset="serviceSkinNeedling" alt="Skin Needling" width="640" height="190" loading="lazy" decoding="async">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&h=380&q=80" data-ecs-asset="serviceSkinNeedling" alt="Skin needling facial treatment" width="800" height="380" loading="lazy" decoding="async">
         <div class="service-card-body">
           <h3>Skin Needling</h3>
           <p>SkinPen microneedling to improve texture, tone and overall skin quality.</p>
@@ -564,7 +562,7 @@
         </div>
       </div>
       <div class="service-card reveal" style="--reveal-delay: 120ms">
-        <img data-ecs-asset="serviceLaserRejuvenation" alt="Laser Skin Rejuvenation" width="640" height="190" loading="lazy" decoding="async">
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=800&h=380&q=80" data-ecs-asset="serviceLaserRejuvenation" alt="Laser skin rejuvenation treatment" width="800" height="380" loading="lazy" decoding="async">
         <div class="service-card-body">
           <h3>Laser Skin Rejuvenation</h3>
           <p>Candela laser facials targeting fine lines, pigmentation and uneven tone.</p>
@@ -572,7 +570,7 @@
         </div>
       </div>
       <div class="service-card reveal" style="--reveal-delay: 160ms">
-        <img data-ecs-asset="serviceFacialsPeels" alt="Facials &amp; Peels" width="640" height="190" loading="lazy" decoding="async">
+        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&h=380&q=80" data-ecs-asset="serviceFacialsPeels" alt="Facial peel skincare treatment" width="800" height="380" loading="lazy" decoding="async">
         <div class="service-card-body">
           <h3>Facials &amp; Peels</h3>
           <p>Customised facials to refresh, hydrate and restore your natural glow.</p>
@@ -580,7 +578,7 @@
         </div>
       </div>
       <div class="service-card reveal" style="--reveal-delay: 200ms">
-        <img data-ecs-asset="serviceDoubleChin" alt="Double Chin Treatment" width="640" height="190" loading="lazy" decoding="async">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&h=380&q=80" data-ecs-asset="serviceDoubleChin" alt="Double chin treatment consultation" width="800" height="380" loading="lazy" decoding="async">
         <div class="service-card-body">
           <h3>Double Chin Treatment</h3>
           <p>Non-surgical fat-dissolving injections for a more defined profile.</p>
@@ -606,50 +604,6 @@
       <div class="accent-script" style="color:var(--accent);font-style:italic;">Free $30 Voucher</div>
       <p>Refer a friend</p>
     </div>
-    <a href="https://bookings.gettimely.com/expertcosmeticsolutions1/book" target="_blank" class="btn btn-secondary">Book an Appointment</a>
-  </div>
-</section>
-
-<!-- YOU ARE OUR PRIORITY -->
-<section id="priority" data-screen-label="Priority">
-  <div style="max-width:1200px;margin:0 auto;padding:0 40px;">
-    <div class="priority-header">
-      <div class="section-label" style="justify-content:center;">Our Commitment</div>
-      <h2>You Are Our Priority</h2>
-      <p class="section-subtitle">Because your skin deserves more than trial and error.</p>
-    </div>
-    <div class="priority-grid">
-      <div class="priority-item">
-        <div class="priority-item-dot"></div>
-        <h3>Personalised From The Start</h3>
-        <p>Every treatment begins with understanding you - your skin, your concerns, your goals, your lifestyle. No guesswork. No generic plans.</p>
-      </div>
-      <div class="priority-item">
-        <div class="priority-item-dot"></div>
-        <h3>Tailored, Not Trend-Based</h3>
-        <p>What works for someone else may not work for you. We create personalised treatment plans designed to support your skin long term - not just follow trends.</p>
-      </div>
-      <div class="priority-item">
-        <div class="priority-item-dot"></div>
-        <h3>A Journey, Not a Quick Fix</h3>
-        <p>Whether you're new to cosmetic treatments or have tried everything before, we're here to guide you toward lasting, healthy results.</p>
-      </div>
-      <div class="priority-item">
-        <div class="priority-item-dot"></div>
-        <h3>A Clinic That Listens</h3>
-        <p>At Expert Cosmetic Solutions, you're not rushed or overlooked. You're supported, guided and cared for every step of the way.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BOOK CTA -->
-<section id="bookcta" data-screen-label="Book CTA">
-  <div class="bookcta-content">
-    <div class="accent-script" style="color: #ffffff">Ready?</div>
-    <h2>Book A Consultation With Us</h2>
-    <p>You can always book a consultation by reaching out via Instagram, phone call, text or through our website - whatever is easiest for you.</p>
-    <a href="https://bookings.gettimely.com/expertcosmeticsolutions1/book" target="_blank" class="btn btn-secondary">Book an Appointment</a>
   </div>
 </section>
 
@@ -657,35 +611,10 @@
 <section id="faq" data-screen-label="FAQ">
   <div style="max-width:860px;margin:0 auto;padding:0 40px;">
     <div class="faq-header reveal">
-      <div class="section-label" style="justify-content:center;">FAQs</div>
-      <h2>Still Unsure? We'll Guide You Every Step.</h2>
-      <p class="section-subtitle">Visit our FAQs section to get all the answers you need.</p>
+      <div class="section-label">FAQs</div>
+      <h2>Frequently Asked Questions</h2>
     </div>
     <div id="faqList" class="faq-list"></div>
-    <div class="faq-more">
-      <a href="https://expertcosmeticsolutions.com.au/contact-us/" target="_blank">Have questions? Get in touch today -></a>
-    </div>
-  </div>
-</section>
-
-<!-- INSTAGRAM -->
-<section id="instagram" data-screen-label="Instagram">
-  <div style="max-width:1200px;margin:0 auto;padding:0 40px;">
-    <div class="insta-header">
-      <div class="section-label">Get Social With Us</div>
-      <h2>@expertcosmeticsolutions</h2>
-      <p>Follow us on Instagram for real client results and behind-the-scenes from the clinic.</p>
-    </div>
-    <div class="instagram-grid">
-      <div class="insta-item">Photo</div>
-      <div class="insta-item">Photo</div>
-      <div class="insta-item">Photo</div>
-      <div class="insta-item">Photo</div>
-      <div class="insta-item">Photo</div>
-    </div>
-    <div class="insta-link">
-      <a href="https://www.instagram.com/expertcosmeticsolutions/" target="_blank">View on Instagram -></a>
-    </div>
   </div>
 </section>
 
@@ -698,7 +627,9 @@
   </div>
   <div class="footer-content">
     <div class="footer-brand">
-      <img data-ecs-asset="logoFooter" alt="" width="40" height="40">
+      <div class="brand-logo-wrap">
+        <img class="brand-logo" src="assets/Expert-Cosmetic-Solutions-Logo-Transparent.png" data-ecs-asset="logoBrand" alt="Expert Cosmetic Solutions" width="108" height="108">
+      </div>
       <p>Our affordable cosmetic treatment plans are prescribed as per your preference, concerns and lifestyle. Your happiness matters the most to us.</p>
       <div class="footer-socials">
         <a href="https://www.instagram.com/expertcosmeticsolutions/" target="_blank" class="social-btn">IG</a>

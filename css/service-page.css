@@ -86,10 +86,10 @@
   display: block;
 }
 
-.service-page header .site-logo {
-  filter: brightness(0) invert(1);
-  width: 44px;
-  height: 44px;
+.service-page header .brand-logo {
+  height: 52px;
+  width: auto;
+  max-width: 132px;
   object-fit: contain;
 }
 
@@ -184,14 +184,6 @@
   text-align: center;
 }
 
-.section-intro .section-label {
-  justify-content: center;
-}
-
-.section-intro .section-label::before {
-  order: 2;
-}
-
 .section-intro h2 {
   text-wrap: balance;
 }
@@ -226,7 +218,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
   gap: clamp(2rem, 4vw, 3rem);
-  align-items: start;
+  align-items: center;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -239,6 +231,10 @@
   aspect-ratio: 3 / 4;
 }
 
+.intro-media--landscape {
+  aspect-ratio: 4 / 3;
+}
+
 .intro-media img {
   width: 100%;
   height: 100%;
@@ -246,45 +242,39 @@
   display: block;
 }
 
-.stat-banner {
-  background: var(--pale);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 2.5rem 0;
-}
-
-.stat-banner .stat-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.5rem, 4vw, 3rem);
-  max-width: 900px;
-  margin: 0 auto;
-  border-top: none;
-  padding-top: 0;
-}
-
-.stat-banner .stat-item {
+.intro-caption {
+  padding: 0.875rem 1rem 0;
+  font-size: 0.8125rem;
+  color: var(--text-light);
+  line-height: 1.55;
   text-align: center;
 }
 
-.stat-banner .number {
-  font-family: var(--font-brand-serif);
-  font-size: 2.25rem;
-  color: var(--accent);
-  font-weight: 600;
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
+.intro-benefits {
+  list-style: none;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
 }
 
-.stat-banner .label {
-  font-size: 0.625rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.intro-benefits li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.9375rem;
   color: var(--text-light);
-  margin-top: 0.4rem;
-  max-width: 12rem;
-  margin-inline: auto;
-  line-height: 1.4;
+  line-height: 1.6;
+}
+
+.intro-benefits li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 .care-grid {
@@ -443,11 +433,6 @@
   max-width: 860px;
 }
 
-.faq-shell .faq-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
 .faq-shell .faq-list {
   margin-inline: auto;
 }
@@ -468,9 +453,12 @@
   padding-bottom: 2px;
 }
 
-.service-page .footer-logo {
-  filter: none;
-  object-fit: contain;
+.service-page .footer-cta {
+  display: none;
+}
+
+.service-page #faq {
+  padding: 4.5rem 0;
 }
 
 @media (max-width: 900px) {
@@ -524,11 +512,6 @@
 
   .page-wrap {
     padding: 0 1.25rem;
-  }
-
-  .stat-banner .stat-row {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
   }
 
   .care-grid {

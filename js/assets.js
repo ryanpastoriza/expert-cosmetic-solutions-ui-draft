@@ -2,17 +2,23 @@
   'use strict';
 
   /** Relative paths from ecs-homepage-src/ */
+  const BRAND_LOGO = 'assets/Expert-Cosmetic-Solutions-Logo-Transparent.png';
+
   const ASSETS = {
-    logoMark: 'assets/logo-mark.svg',
-    logoFooter: 'assets/logo-mark-footer.svg',
-    logoFull: 'assets/Expert-Cosmetic-Solutions-Logo-Transparent.png',
+    logoBrand: BRAND_LOGO,
+    logoMark: BRAND_LOGO,
+    logoFooter: BRAND_LOGO,
+    logoFull: BRAND_LOGO,
     aboutTeam: 'assets/about-use-image.jpg',
-    serviceLaserRejuvenation: 'assets/services/laser-skin-rejuvenation.svg',
-    serviceLaserHairRemoval: 'assets/services/laser-hair-removal.svg',
-    serviceCosmeticInjectables: 'assets/services/cosmetic-injectables.svg',
-    serviceSkinNeedling: 'assets/services/skin-needling.svg',
-    serviceFacialsPeels: 'assets/services/facials-peels.svg',
-    serviceDoubleChin: 'assets/services/double-chin-treatment.svg'
+    heroHome: 'assets/photos/hero-home.jpg',
+    laserRejuvenationHero: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&h=1050&q=80',
+    laserRejuvenationIntro: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1200&h=900&q=80',
+    serviceLaserHairRemoval: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&h=380&q=80',
+    serviceCosmeticInjectables: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&h=380&q=80',
+    serviceSkinNeedling: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&h=380&q=80',
+    serviceLaserRejuvenation: 'https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=800&h=380&q=80',
+    serviceFacialsPeels: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&h=380&q=80',
+    serviceDoubleChin: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&h=380&q=80'
   };
 
   function getAssetBase() {
@@ -25,6 +31,7 @@
 
   function resolveAsset(relativePath) {
     if (!relativePath) return '';
+    if (/^https?:\/\//i.test(relativePath)) return relativePath;
     const base = getAssetBase();
     if (!base) return relativePath;
     try {
